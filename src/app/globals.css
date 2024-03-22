@@ -1,33 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+h1 {
+  @apply font-poppins font-semibold text-5xl sm:text-6xl md:text-7xl text-white xs:leading-[76.8px] leading-[66.8px] w-full;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h2 {
+  @apply font-poppins font-normal text-3xl  sm:text-4xl md:text-5xl xs:leading-[26px] leading-[21px] text-white uppercase;
+}
+
+h3 {
+  @apply font-poppins font-normal text-xl  sm:text-2xl md:text-3xl xs:leading-[26px] leading-[21px] text-white uppercase;
+}
+
+p {
+  @apply text-base font-normal text-white md:leading-8 md:text-xl font-poppins;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-primary;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 61.16% 35.69%,
+    #e0c8e4 0.89%,
+    #d4a7df 17.23%,
+    #cb80db 42.04%,
+    #ce66e6 55.12%,
+    #c322e7 61.54%,
+    #9202f6 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-purple-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #e0c8e4 -43.27%,
+    #d4a7df -21.24%,
+    #cb80db 12.19%,
+    #ce66e6 29.82%,
+    #c322e7 51.94%,
+    #9202f6 90.29%
+  );
+}
+
+.button-gradient {
+  @apply py-4 rounded-xl px-4 bg-purple-gradient font-poppins font-medium text-[18px] text-xl text-white outline-none mt-10 transition-colors duration-300 ease-in-out;
+}
+
+.button-gradient:hover {
+  background: linear-gradient(
+    337.81deg,
+    #e0c8e4 -43.27%,
+    #d4a7df -21.24%,
+    #cb80db 12.19%,
+    #ce66e6 29.82%,
+    #c322e7 51.94%,
+    #9202f6 90.29%
+  );
+}
+
+.purple__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #ce66e6 100%);
+  filter: blur(123px);
+}
+
+/* CARD */
+.neon__card {
+  background: rgba(255, 255, 255, 0.01);
+  color: #fff;
+  box-shadow: inset 0 22px 56px -36px rgba(199, 2, 241, 0.5),
+    inset 0 4px 5px -4px rgb(199, 2, 241),
+    inset 0 -31px 34px -32px rgba(96, 68, 144, 0.3),
+    inset 0 39px 50px -34px rgba(202, 172, 255, 0.3),
+    inset 0 2px 9px rgba(154, 146, 210, 0.3),
+    inset 0 1px 10px rgba(227, 222, 255, 0.2);
+  backdrop-filter: blur(100px);
+  border-radius: 3rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon__card:hover {
+  box-shadow: inset 0 19px 28px -18px rgba(199, 2, 241, 0.5),
+    inset 0 4px 6px -3px rgba(199, 2, 241, 1),
+    inset 0 -51px 44px -42px rgba(96, 68, 144, 0.3),
+    inset 0 59px 60px -32px rgba(202, 172, 255, 0.3),
+    inset 0 4px 16px rgba(154, 146, 210, 0.3),
+    inset 0 2px 25px rgba(227, 222, 255, 0.23);
+  text-shadow: 0 0 14px rgba(161, 165, 247, 0.8);
 }
