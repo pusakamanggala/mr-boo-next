@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col items-center gap-10 space-y-10 y-10 md:py-20 md:space-y-0 md:mx-10 md:flex-row"
+      className="flex flex-col items-center gap-10 space-y-10 y-10 md:py-20 md:space-y-0 md:mx-10 md:flex-row blurry-2"
     >
       <Image
         src="/image/logo/mr.boo.png"

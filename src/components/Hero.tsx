@@ -9,7 +9,11 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="pt-24 space-y-5 md:pb-10 lg:pt-0" id="home">
+    <section
+      className="pt-24 space-y-5 md:pb-10 lg:pt-0 relative blurry-3"
+      id="home"
+    >
+      {/* blur */}
       <div className="items-center min-h-screen space-y-10 md:flex">
         <div className="space-y-10 md:w-1/2">
           <hgroup className="space-y-3 ">

@@ -2,7 +2,7 @@ import { GlassNeonCard } from "./GlassNeonCard";
 
 export default function Services() {
   return (
-    <section id="service" className="min-h-screen py-5 md:py-20">
+    <section id="service" className="min-h-screen py-5 md:py-20 blurry-3">
       <div className="grid gap-10 md:grid-cols-2 md:px-20 xl:grid-cols-3">
         <hgroup className="flex flex-col justify-center space-y-5 font-semibold text-center md:text-start">
           <h1 className="text-gradient">Services</h1>

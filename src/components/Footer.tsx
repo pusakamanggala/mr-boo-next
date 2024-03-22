@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-t from-secondary/20 to-transparent">
+    <footer className="w-full bg-gradient-to-t from-secondary/20 to-transparent mt-20 md:mt-32">
       <div className="container flex flex-col gap-10 px-4 py-10 mx-auto md:flex-row justify-evenly md:px-0">
         <div>
           <Image

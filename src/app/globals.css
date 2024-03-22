@@ -24,6 +24,21 @@ body {
   @apply bg-primary;
 }
 
+.blurry-1 {
+  background-image: url("/image/decoration/bbblurry-1.svg");
+  background-repeat: no-repeat;
+}
+
+.blurry-2 {
+  background-image: url("/image/decoration/bbblurry-2.svg");
+  background-repeat: no-repeat;
+}
+
+.blurry-3 {
+  background-image: url("/image/decoration/bbblurry-3.svg");
+  background-repeat: no-repeat;
+}
+
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 61.16% 35.69%,
