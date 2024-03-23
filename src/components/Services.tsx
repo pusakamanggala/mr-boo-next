@@ -21,12 +21,7 @@ export default function Services() {
         </hgroup>
         <Fade delay={300}>
           <GlassNeonCard
-            description="Mr.Boo marketing incubation works only if you are planning to list
-            your project on Pinksale, we are working with Verified pinksale
-            incubator to maximize the fundraise for Presale and Fairlaunch. Our
-            focus is to help the project to raise funds as much as possible so
-            it will be great for project liquidity in the future (also for
-            upcoming marketing and operational)."
+            description="As project incubator , it is our duty to support the project with the best marketing plan in order to get decent sale during your presale. We also ensure budget effectiveness so you don't have to spend for unnecessary needs."
             title="Incubation Program"
           >
             <div className="w-20 h-20 bg-white rounded-full">ICON</div>
