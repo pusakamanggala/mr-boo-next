@@ -2,6 +2,7 @@
 
 import { Fade, Slide } from "react-awesome-reveal";
 import { GlassNeonCard } from "./GlassNeonCard";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -24,7 +25,12 @@ export default function Services() {
             description="As project incubator , it is our duty to support the project with the best marketing plan in order to get decent sale during your presale. We also ensure budget effectiveness so you don't have to spend for unnecessary needs."
             title="Incubation Program"
           >
-            <div className="w-20 h-20 bg-white rounded-full">ICON</div>
+            <Image
+              src="/image/icon/incubation.webp"
+              alt="incubation"
+              width={80}
+              height={80}
+            />
           </GlassNeonCard>
         </Fade>
         <Fade delay={600}>
@@ -32,7 +38,12 @@ export default function Services() {
             description="Amplify your project's brand through social media. We specialize in attracting quality buyers and holders while ensuring your presence on top crypto platforms like CoinMarketCap, CoinGecko, and Dextools. Let us help you trend and generate buzz within the community, unlocking unparalleled exposure and paving the path to success."
             title="Social Media & Trending"
           >
-            <div className="w-20 h-20 bg-white rounded-full">ICON</div>
+            <Image
+              src="/image/icon/social-media.webp"
+              alt="social media"
+              width={80}
+              height={80}
+            />
           </GlassNeonCard>
         </Fade>
         <Fade delay={900}>
@@ -40,7 +51,12 @@ export default function Services() {
             description="Experience the future of digital advertising with our Web 3.0 pages. Our innovative solutions leverage the latest technologies to create captivating and interactive experiences for your audience. From dynamic content to seamless user interfaces, we redefine the standards of online advertising."
             title="Web3 Advertising"
           >
-            <div className="w-20 h-20 bg-white rounded-full">ICON</div>
+            <Image
+              src="/image/icon/web3.webp"
+              alt="web3"
+              width={80}
+              height={80}
+            />
           </GlassNeonCard>
         </Fade>
         <Fade delay={1200}>
@@ -48,7 +64,12 @@ export default function Services() {
             description="Maximize your project's exposure with our comprehensive press release services, reaching top-tier platforms like Yahoo Finance, Bloomberg, and NASDAQ. Special services include connection to Binance for Live AMA and trending on Altcoin. Access Tier 1 exchange feeds on Binance, Huobi, KuCoin, and Gate.io."
             title="PRESS RELEASE"
           >
-            <div className="w-20 h-20 bg-white rounded-full">ICON</div>
+            <Image
+              src="/image/icon/news.webp"
+              alt="news"
+              width={80}
+              height={80}
+            />
           </GlassNeonCard>
         </Fade>
         <Fade delay={1500}>
@@ -56,7 +77,12 @@ export default function Services() {
             description="Explore our Blockchain & Metaverse Development expertise: Smart Contracts, testnet services, mainnet implementation, bridge/DEX/Staking platforms creation. Experience captivating Metaverse offerings: mini games, virtual tours, engaging introductions. Turn your ideas into immersive digital realities with us."
             title="BLOCKCHAIN & METAVERSE DEVELOPMENT"
           >
-            <div className="w-20 h-20 bg-white rounded-full">ICON</div>
+            <Image
+              src="/image/icon/metaverse.webp"
+              alt="metaverse"
+              width={80}
+              height={80}
+            />
           </GlassNeonCard>
         </Fade>
       </div>

@@ -7,7 +7,7 @@ export default function About() {
     <Fade duration={1000} delay={500}>
       <section
         id="about"
-        className="flex flex-col items-center gap-10 space-y-10 y-10 md:py-20 md:space-y-0 md:mx-10 md:flex-row blurry-2"
+        className="flex flex-col items-center gap-10 space-y-10 py-10 md:py-20 md:space-y-0 md:mx-10 md:flex-row blurry-2"
       >
         <Image
           src="/image/logo/mr.boo.webp"

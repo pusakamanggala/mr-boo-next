@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { Slide } from "react-awesome-reveal";
 
 export default function Partnerships() {
   const listingPartners = [
@@ -120,13 +123,16 @@ export default function Partnerships() {
       id="partnership"
       className="py-5 space-y-10 md:flex-row md:py-20 md:mx-10 blurry-1"
     >
-      <hgroup className="space-y-5 text-center mb-28">
-        <h1 className="text-gradient">Partnerships</h1>
-        <p>
-          Unlocking Success Through Strategic Alliances and Collaborative
-          Endeavors
-        </p>
-      </hgroup>
+      <Slide direction="up">
+        <hgroup className="space-y-5 text-center mb-28">
+          <h1 className="text-gradient">Partnerships</h1>
+          <p>
+            Unlocking Success Through Strategic Alliances and Collaborative
+            Endeavors
+          </p>
+        </hgroup>
+      </Slide>
+
       <div className="grid gap-20 md:gap-10 md:divide-x-2 md:grid-cols-2 md:divide-secondary">
         <div className="space-y-5">
           <h2 className="flex flex-col pb-5 font-medium text-center text-gradient gap-y-3 md:gap-y-0">
