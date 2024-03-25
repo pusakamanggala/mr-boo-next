@@ -10,7 +10,7 @@ export default function About() {
         className="flex flex-col items-center gap-10 space-y-10 y-10 md:py-20 md:space-y-0 md:mx-10 md:flex-row blurry-2"
       >
         <Image
-          src="/image/logo/mr.boo.png"
+          src="/image/logo/mr.boo.webp"
           className="md:h-[500px] h-[300px] aspect-square md:w-auto"
           alt="mr.boo"
           width={300}

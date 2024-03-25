@@ -57,19 +57,18 @@ export default function Hero() {
           <Slide delay={0} direction="right">
             <div className="w-[400px] md:w-full mx-auto">
               <Image
-                src="/image/decoration/robot-hand.png"
+                src="/image/decoration/robot-hand.webp"
                 alt="robot hand"
                 className="w-full mx-auto"
                 width={400}
                 height={400}
               />
               <Image
-                src="/image/logo/ethereum-logo.gif"
+                src="/image/logo/ethereum-logo.webp"
                 alt="ethereum logo"
                 className="w-[150px] xl:w-[250px] xl:top-36 lg:top-28 mx-auto absolute top-0 left-1/3"
                 width={250}
                 height={150}
-                unoptimized
               />
             </div>
           </Slide>
