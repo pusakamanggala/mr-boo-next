@@ -26,7 +26,7 @@ export default function Footer() {
           <p className="mb-5 font-semibold">SITEMAP</p>
           <ul className="space-y-2 text-white [&>li]:cursor-pointer text-lg">
             <li>
-              <Link to="hero" smooth spy>
+              <Link to="home" smooth spy>
                 Home
               </Link>
             </li>
@@ -46,7 +46,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="partnertship" smooth spy>
+              <Link to="partnership" smooth spy>
                 Partnership
               </Link>
             </li>
