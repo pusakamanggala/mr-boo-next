@@ -76,19 +76,15 @@ export default function Hero() {
       </div>
 
       <div className="flex flex-wrap justify-center gap-10">
-        <Fade delay={100}>
+        <Fade delay={100} cascade>
           <hgroup className="flex items-center gap-3 w-fit text-nowrap">
             <h2 className="font-semibold">10+</h2>
             <p className="text-2xl text-gradient">SUCCESSFUL PROJECT(S)</p>
           </hgroup>
-        </Fade>
-        <Fade delay={300}>
           <hgroup className="flex items-center gap-3 w-fit text-nowrap">
             <h2 className="font-semibold">9</h2>
             <p className="text-2xl text-gradient">QUALITY SERVICE(S)</p>
           </hgroup>
-        </Fade>
-        <Fade delay={500}>
           <hgroup className="flex items-center gap-3 w-fit text-nowrap">
             <h2 className="font-semibold">20+</h2>
             <p className="text-2xl text-gradient">TRUSTED PARTNERSHIP(S)</p>

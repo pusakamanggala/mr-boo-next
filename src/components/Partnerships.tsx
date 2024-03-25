@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 export default function Partnerships() {
   const listingPartners = [
@@ -132,51 +132,52 @@ export default function Partnerships() {
           </p>
         </hgroup>
       </Slide>
-
-      <div className="grid gap-20 md:gap-10 md:divide-x-2 md:grid-cols-2 md:divide-secondary">
-        <div className="space-y-5">
-          <h2 className="flex flex-col pb-5 font-medium text-center text-gradient gap-y-3 md:gap-y-0">
-            Listing <span>Partners</span>
-          </h2>
-          <div className="flex flex-wrap justify-center gap-7">
-            {listingPartners &&
-              listingPartners.map((partner, index) => (
-                <div key={index} className="h-5 md:h-8 lg:h-10 ">
-                  <Image
-                    src={"/image/listing-partner/" + partner.img}
-                    alt={partner.name}
-                    className="object-contain h-full mx-auto"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "auto", minHeight: "100%" }}
-                  />
-                </div>
-              ))}
+      <Fade fraction={0.2} delay={300} duration={1000}>
+        <div className="grid gap-20 md:gap-10 md:divide-x-2 md:grid-cols-2 md:divide-secondary">
+          <div className="space-y-5">
+            <h2 className="flex flex-col pb-5 font-medium text-center text-gradient gap-y-3 md:gap-y-0">
+              Listing <span>Partners</span>
+            </h2>
+            <div className="flex flex-wrap justify-center gap-7">
+              {listingPartners &&
+                listingPartners.map((partner, index) => (
+                  <div key={index} className="h-5 md:h-8 lg:h-10 ">
+                    <Image
+                      src={"/image/listing-partner/" + partner.img}
+                      alt={partner.name}
+                      className="object-contain h-full mx-auto"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "auto", minHeight: "100%" }}
+                    />
+                  </div>
+                ))}
+            </div>
+          </div>
+          <div className="space-y-5">
+            <h2 className="flex flex-col pb-5 font-medium text-center text-gradient gap-y-3 md:gap-y-0">
+              Exclusive <span>Partners</span>
+            </h2>
+            <div className="flex flex-wrap justify-center gap-7">
+              {exclusivePartners &&
+                exclusivePartners.map((partner, index) => (
+                  <div key={index} className="h-12 md:h-20 lg:h-24 ">
+                    <Image
+                      src={"/image/exclusive-partner/" + partner.img}
+                      alt={partner.name}
+                      className="object-contain h-full mx-auto"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "auto", minHeight: "100%" }}
+                    />
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
-        <div className="space-y-5">
-          <h2 className="flex flex-col pb-5 font-medium text-center text-gradient gap-y-3 md:gap-y-0">
-            Exclusive <span>Partners</span>
-          </h2>
-          <div className="flex flex-wrap justify-center gap-7">
-            {exclusivePartners &&
-              exclusivePartners.map((partner, index) => (
-                <div key={index} className="h-12 md:h-20 lg:h-24 ">
-                  <Image
-                    src={"/image/exclusive-partner/" + partner.img}
-                    alt={partner.name}
-                    className="object-contain h-full mx-auto"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "auto", minHeight: "100%" }}
-                  />
-                </div>
-              ))}
-          </div>
-        </div>
-      </div>
+      </Fade>
     </section>
   );
 }

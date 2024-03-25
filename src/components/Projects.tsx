@@ -139,48 +139,49 @@ export default function Project() {
         </Slider>
       </Fade>
       <div className="md:space-y-5">
-        <Slide direction="up" delay={100}>
+        <Slide direction="up" delay={500}>
           <p className="md:mx-28 text-center">
             Delivered 2 Audit Report and 1 KYC from SolidProof with the BEST
             price and marketing assistance for RADA Foundation and NaturesGold
             Token
           </p>
         </Slide>
-
         <div className="sm:grid sm:grid-cols-3  items-center">
-          <div className="lg:w-[300px] md:w-[300px] sm:w-[200px] w-[300px] -mb-16 sm:mb-0 aspect-square relative mx-auto">
-            <Image
-              src={"/image/project/nature-golden-token-certificate.webp"}
-              width={0}
-              height={0}
-              alt={"nature golden token certificate"}
-              fill
-              sizes="(100vw, 100vh)"
-              className="object-contain"
-            />
-          </div>
-          <div className="lg:w-[400px] md:w-[350px] sm:w-[250px] w-[300px] -mb-16 sm:mb-0 aspect-square relative mx-auto">
-            <Image
-              src={"/image/project/natures-gold-token-audit.webp"}
-              width={0}
-              height={0}
-              alt={"nature golden token certificate"}
-              fill
-              sizes="(100vw, 100vh)"
-              className="object-contain"
-            />
-          </div>
-          <div className="lg:w-[300px] md:w-[300px] sm:w-[200px] w-[300px] -mb-16 sm:mb-0 aspect-square relative mx-auto">
-            <Image
-              src={"/image/project/rada-audit.webp"}
-              width={0}
-              height={0}
-              alt={"nature golden token certificate"}
-              fill
-              sizes="(100vw, 100vh)"
-              className="object-contain"
-            />
-          </div>
+          <Slide direction="up" delay={100} fraction={0.1} damping={0.1}>
+            <div className="lg:w-[300px] md:w-[300px] sm:w-[200px] w-[300px] -mb-16 sm:mb-0 aspect-square relative mx-auto">
+              <Image
+                src={"/image/project/nature-golden-token-certificate.webp"}
+                width={0}
+                height={0}
+                alt={"nature golden token certificate"}
+                fill
+                sizes="(100vw, 100vh)"
+                className="object-contain"
+              />
+            </div>
+            <div className="lg:w-[400px] md:w-[350px] sm:w-[250px] w-[300px] -mb-16 sm:mb-0 aspect-square relative mx-auto">
+              <Image
+                src={"/image/project/natures-gold-token-audit.webp"}
+                width={0}
+                height={0}
+                alt={"nature golden token certificate"}
+                fill
+                sizes="(100vw, 100vh)"
+                className="object-contain"
+              />
+            </div>
+            <div className="lg:w-[300px] md:w-[300px] sm:w-[200px] w-[300px] -mb-16 sm:mb-0 aspect-square relative mx-auto">
+              <Image
+                src={"/image/project/rada-audit.webp"}
+                width={0}
+                height={0}
+                alt={"nature golden token certificate"}
+                fill
+                sizes="(100vw, 100vh)"
+                className="object-contain"
+              />
+            </div>
+          </Slide>
         </div>
       </div>
     </section>
