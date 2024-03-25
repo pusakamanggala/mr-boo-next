@@ -14,7 +14,7 @@ export default function Partnerships() {
       name: "Bitmart",
     },
     {
-      img: "bkex.webp",
+      img: "BKEX.webp",
       name: "BKEX",
     },
     {
