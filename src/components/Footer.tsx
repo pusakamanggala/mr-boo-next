@@ -71,20 +71,23 @@ export default function Footer() {
             Unleash potential and growth with us.
           </p>
           <div className="flex gap-3">
-            <a className="w-16 h-16 p-3 neon__card">
-              <RiTelegramFill color="#ffffff" className="w-full h-full" />
+            <a
+              className=" neon__card flex items-center px-5 py-3 h-fit font-semibold gap-2 text-xl cursor-pointer"
+              href="https://t.me/MrBooMKT"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <RiTelegramFill color="#ffffff" />
+              Marketing
             </a>
-            <a className="w-16 h-16 p-4 neon__card">
-              <RiMailFill color="#ffffff" className="w-full h-full" />
-            </a>
-            <a className="w-16 h-16 p-4 neon__card">
-              <RiTwitterXFill color="#ffffff" className="w-full h-full" />
-            </a>
-            <a className="w-16 h-16 p-3 neon__card">
-              <RiLinkedinBoxFill color="#ffffff" className="w-full h-full" />
-            </a>
-            <a className="w-16 h-16 p-3 neon__card">
-              <RiDiscordFill color="#ffffff" className="w-full h-full" />
+            <a
+              className=" neon__card flex items-center px-5 py-3 h-fit font-semibold gap-2 text-xl cursor-pointer"
+              href="https://t.me/MrBooService"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <RiTelegramFill color="#ffffff" />
+              Channel
             </a>
           </div>
         </div>

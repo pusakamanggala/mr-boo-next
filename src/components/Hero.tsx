@@ -32,20 +32,23 @@ export default function Hero() {
               </p>
             </hgroup>
             <div className="flex gap-3">
-              <a className="w-16 p-3 md:w-20 aspect-square neon__card">
-                <RiTelegramFill color="#ffffff" className="w-full h-full" />
+              <a
+                className=" neon__card flex items-center px-5 py-3 h-fit font-semibold gap-2 text-xl cursor-pointer"
+                href="https://t.me/MrBooMKT"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTelegramFill color="#ffffff" />
+                Marketing
               </a>
-              <a className="w-16 p-4 md:w-20 aspect-square neon__card">
-                <RiMailFill color="#ffffff" className="w-full h-full" />
-              </a>
-              <a className="w-16 p-4 md:w-20 aspect-square neon__card">
-                <RiTwitterXFill color="#ffffff" className="w-full h-full" />
-              </a>
-              <a className="w-16 p-3 md:w-20 aspect-square neon__card">
-                <RiLinkedinBoxFill color="#ffffff" className="w-full h-full" />
-              </a>
-              <a className="w-16 p-3 md:w-20 aspect-square neon__card">
-                <RiDiscordFill color="#ffffff" className="w-full h-full" />
+              <a
+                className=" neon__card flex items-center px-5 py-3 h-fit font-semibold gap-2 text-xl cursor-pointer"
+                href="https://t.me/MrBooService"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTelegramFill color="#ffffff" />
+                Channel
               </a>
             </div>
           </Slide>
