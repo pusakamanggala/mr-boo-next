@@ -114,3 +114,18 @@ body {
     inset 0 2px 25px rgba(227, 222, 255, 0.23);
   text-shadow: 0 0 14px rgba(161, 165, 247, 0.8);
 }
+
+.slick-dots li button:before {
+  color: rgb(255, 255, 255) !important;
+  font-size: 12px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgba(199, 2, 241, 1) !important;
+}
+
+/* hover */
+
+.slick-dots li button:before:hover {
+  color: rgba(161, 165, 247, 0.8) !important;
+}

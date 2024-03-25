@@ -3,6 +3,7 @@ import BottomNavbar from "@/components/BottomNavbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Partnerships from "@/components/Partnerships";
 import Services from "@/components/Services";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+        <Partnerships />
       </main>
       <Footer />
       <BottomNavbar />
